@@ -13,7 +13,7 @@ WATCH?= @check @runtest
 watch:
 	dune build $(DUNE_OPTS) -w $(WATCH)
 
-VERSION=$(shell awk '/^version:/ {print $$2}' moonpool.opam)
+VERSION=$(shell awk '/^version:/ {print $$2}' context.opam)
 update_next_tag:
 	@echo "update version to $(VERSION)..."
 	sed -i "s/NEXT_VERSION/$(VERSION)/g" $(wildcard src/**/*.ml) $(wildcard src/**/*.mli)

@@ -1,26 +1,23 @@
 (lang dune 2.9)
 
-(name rcontext)
+(name context)
 (version 0.1)
 (generate_opam_files true)
 (source
- (github c-cube/context))
+ (github c-cube/ocaml-context))
 (authors "Simon Cruanes")
 (maintainers "Simon Cruanes")
 (license MIT)
 
-;(documentation https://url/to/documentation)
-
 (package
- (name rcontext)
+ (name context)
  (synopsis "Generic request handling context to carry around, inspired from Go's")
  (depends
   (ocaml (>= 4.08))
-  hmap
-  dune
+  (dune (>= 2.9))
   (odoc :with-doc))
  (depopts
-   thread-local-storage
+   hmap
    mtime)
  (conflicts (thread-local-storage (< 0.2)))
  (tags

@@ -1,7 +1,6 @@
 (** Per-request contexts *)
 
-module Ctx = Ctx
-include Ctx
+module Hetmap = Hetmap
+include Hetmap
 include Deadline
 include Start_time
-include Tls
