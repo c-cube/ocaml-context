@@ -7,14 +7,4 @@
    hetmap.ml
    from
    (hmap -> hetmap.hmap.ml)
-   (-> hetmap.ourown.ml))
-  (select
-   deadline.ml
-   from
-   (mtime mtime.clock.os -> deadline.real.ml)
-   (-> deadline.empty.ml))
-  (select
-   start_time.ml
-   from
-   (mtime mtime.clock.os -> start_time.real.ml)
-   (-> start_time.empty.ml))))
+   (-> hetmap.ourown.ml))))
