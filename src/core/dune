@@ -4,7 +4,7 @@
  (synopsis "Go-like Context")
  (libraries
   (select
-   hetmap.ml
+   context.ml
    from
-   (hmap -> hetmap.hmap.ml)
-   (-> hetmap.ourown.ml))))
+   (hmap -> context.hmap.ml)
+   (-> context.ourown.ml))))
