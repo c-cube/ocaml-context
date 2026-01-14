@@ -5,7 +5,10 @@
 (**/**)
 
 module Private_implem_ :
-  Context_sig.S with type t = Hmap.t and type 'a key = 'a Hmap.key = struct
+  Context_sig.S
+    with type t = Hmap.t
+     and type 'a key = 'a Hmap.key
+     and type binding := Hmap.binding = struct
   type 'a key = 'a Hmap.key
   (** Key to access a certain value in the context *)
 
