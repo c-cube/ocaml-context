@@ -32,7 +32,7 @@ jobs:
           dune-cache: true
           allow-prerelease-opam: true
 
-      - run: opam install -t rcontext --deps-only
+      - run: opam install -t context --deps-only
       - run: opam exec -- dune build @install
 
       # with depopts

@@ -19,11 +19,11 @@ jobs:
           dune-cache: true
           allow-prerelease-opam: true
 
-      - run: opam install odig mtime ptime thread-local-storage # depopts
-      - run: opam install rcontext
+      - run: opam install hmap odig mtime ptime # depopts
+      - run: opam install context
 
       - name: Build
-        run: opam exec -- odig odoc --cache-dir=_doc/ rcontext
+        run: opam exec -- odig odoc --cache-dir=_doc/ context
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
